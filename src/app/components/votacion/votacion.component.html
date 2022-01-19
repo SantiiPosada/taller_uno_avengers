@@ -4,7 +4,7 @@
         <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let superheroe of avengersOrganizado; let i = index">
             <div class="card">
                 <h1 *ngIf="i==0"> <small>Más me gustas (likes)</small></h1>
-                <h1 *ngIf="i==1"> <small>Menos me gustas (disLikes)</small></h1>
+                <h1 *ngIf="i==1"> <small>Más no me gustas (disLikes)</small></h1>
                 <img class="card-img-top" [src]="superheroe.imagen" [alt]="superheroe.alias">
                 <div class="card-body">
                     <h5 class="card-title">{{superheroe.nombre}}</h5>
