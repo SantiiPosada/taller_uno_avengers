@@ -21,11 +21,6 @@ export class HomeComponent implements OnInit {
 
   }
 
-  /** Update
-   * Falta aún lo de la votación
-  */
-  
-
   public setLike(i:number){
     this._avengersService.like(i);
 
