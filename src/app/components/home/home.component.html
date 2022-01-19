@@ -1,0 +1,22 @@
+<h1> <small>Vengadores</small></h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 d-flex aling-items-strech" *ngFor="let superheroe of avengers; let i = index">
+            <div class="card">
+                <img class="card-img-top" [src]="superheroe.imagen" [alt]="superheroe.alias">
+                <div class="card-body">
+                    <h5 class="card-title">{{superheroe.nombre}}</h5>
+                    <p class="card-text">{{superheroe.alias}}</p>
+                    <p class="card-text">{{superheroe.especie}}</p>
+                    <p class="card-text">{{superheroe.nacionalidad}}</p>
+                    <p class="card-text">{{superheroe.fecha_nacimiento}}</p>
+                    <p class="card-text"><small class="text-muted">{{superheroe.frase}}</small></p>
+                    <p class="card-text"><small class="text-muted">likes: {{superheroe.me_gusta}}</small></p>
+                    <p class="card-text"><small class="text-muted">disLikes: {{superheroe.no_me_gusta}}</small></p>
+                    <button type="button" (click)="setLike(i)" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Like</button>
+                    <button type="button" (click)="setDisLike(i)" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Dislike</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
